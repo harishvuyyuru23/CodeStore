@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+head {
+  font-family: 'Balsamic Sans', cursive;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  font-size: 30px;
+  color: #111;
+  height: 100%;
+  display: flex;
+}
+
+body {
+  font-family: 'Balsamic Sans', cursive;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  color: #111;
+  height: 100%;
+  display: flex;
+  font-size: 20px;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.header-position {
+  margin-top: 60px;
+  margin-left: 40%;
+  font-size: 5vh;
+}
+
+.text-position {
+  margin-top: 0px;
+  margin-left: 50px;
+  font-size: 4vh;
+}
+
+.marquee {
+  margin-left: 50px;
+  margin-top: 0px;
+  margin-bottom: 5vh;
+  width: 80vw;
+  height: 30vh;
+  background-color: white;
+  color: black;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee:before, .marquee::after {
+  position: absolute;
+  top: 0;
+  width: 2rem;
+  height: 100%;
+  content: "";
+  z-index: 1;
+}
+
+.marquee:before {
+  left: 0;
+  background: linear-gradient(to right, white 0%, transparent 100%);
+}
+
+.marquee:after {
+  right: 0;
+  background: linear-gradient(to left, white 0%, transparent 100%);
+}
+
+.marquee-content {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: scrolling 15s linear infinite;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrolling {
+  0% { transform: translateX(0vw); }
+  100% { transform: translateX(-120vw); }
+}
+
+.marquee-content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  flex-shrink: 0;
+  font-size: 4vh;
+  white-space: nowrap;
+}
+
+.marquee-content a img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid white;
+}
+
+.noscroll {
+  margin-left: 50px;
+  margin-top: 0px;
+  margin-bottom: 3vh;
+  width: 80vw;
+  height: 30vh;
+  background-color: white;
+  color: black;
+  overflow: hidden;
+  position: relative;
+}
+
+.noscroll-content {
+  list-style: none;
+  height: 100%;
+  display: flex;
+}
+
+.noscroll-content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  flex-shrink: 0;
+  font-size: 4vh;
+  white-space: nowrap;
+}
+
+.noscroll-content a img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid white;
+}
+
+.vertical {
+  margin-left: 50px;
+  margin-top: 0px;
+  width: 80vw;
+  height: 43vh;
+  background-color: white;
+  color: black;
+  overflow: hidden;
+  position: relative;
+}
+
+.vertical-content {
+  list-style: none;
+  height: 40vh;
+  display: flex;
+}
+
+.vertical-content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12vw;
+  flex-shrink: 0;
+  font-size: 4vh;
+  white-space: nowrap;
+}
+
+.vertical-content a img {
+  width: 100%;
+  height: 40vh;
+  border: 2px solid white;
+}
+
+.division {
+  margin-left: 50px;
+  margin-top: 0px;
+  width: 80vw;
+  height: 50vh;
+  background-color: white;
+  color: black;
+  overflow: hidden;
+  position: relative;
+}
+
+.division-content {
+  list-style: none;
+  height: 100%;
+  display: block;
+}
+
+.division-content p {
+  line-height: normal;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vh;
+}
+
+.division-content a {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 15vh;
+  white-space: nowrap;
+}
+
+.division-content a img {
+  width: 20vw;
+  height: 30vh;
+  border: 2px solid white;
+}
+
+.castinghead-position {
+  margin-top: 0px;
+  margin-left: 40%;
+}

@@ -1,0 +1,73 @@
+/* Default Link Color */
+
+/* .la-ball-triangle-path {
+    color:#d2b356;
+}
+
+#header.nav-solid nav a:hover {
+    color:#d2b356;
+} */
+
+footer, p {
+    font-weight: bold;
+}
+
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+/* properties */
+
+/* --------- 6.3 contactus ---------- */
+
+.contactus {
+    padding: 15px;
+}
+
+blockquote {
+    position: relative;
+}
+
+.contactus img {
+    max-height: 160px;
+    border-radius: 250em;
+}
+
+.contactus footer {
+    padding-top: 12px;
+}
+
+/* Style Classic - Avatar above contactus */
+
+.contactus.classic img {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.contactus.classic q {
+    display: block;
+}
+
+.contactus.classic footer:before {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 4px;
+    margin: 10px auto 15px auto;
+}
+
+/* Style Big */
+
+.contactus.bigtest {
+    padding-top: 0;
+}
+
+.contactus.bigtest q {
+    font-size: 22px;
+}

@@ -1,0 +1,26 @@
+<head>
+  <link rel="stylesheet" href="header.component.css">
+</head>
+
+<header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+    
+    <!--Banner Content-->
+    <div id="banner-content" class="row clearfix">
+
+        <div class="col-38">
+
+            <div class = topleft>
+                <img src="../assets/images/logo.png" id="banner-logo" alt="Landing Page" style="width:300px;height:220px;">
+            </div>
+
+            <div class="section-heading">
+                <h1>About</h1>
+                <h2>Sun Glisten Tools PVT LTD., an ISO 9001-2008 accredited Company, manufactures and exports a variety of Aerospace components with precision and perfection.</h2>
+            </div>
+
+            <a routerLink="/contactus" class = "button" (click)="this.config.setActiveTab('contactus')" [class.active]="this.config.activeTab === 'contactus'">Contact us</a>
+            
+        </div>
+
+    </div><!--End of Row-->
+</header>
